@@ -1,6 +1,6 @@
 import { ApolloServer } from "apollo-server";
 import mongoose from "mongoose";
-import env from "../env";
+import config from "../config.json";
 
 interface config {
   typeDefs: any;
@@ -8,7 +8,7 @@ interface config {
 }
 
 export function startServer({ typeDefs, resolvers }: config) {
-  mongoose.connect(env.DB_URL, {
+  mongoose.connect(config.DB_URL, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   });
