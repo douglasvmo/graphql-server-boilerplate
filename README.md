@@ -7,4 +7,4 @@ I started this repository with the purpose of learning GraphQL and ended having 
 - [mongoose](https://mongoosejs.com/)
 
 ## Result
-This GraphQL service works, is an server side application where "Users" make a "Posts", this interation is delivery by GraphQL as a app need in yor request.
+This GraphQL service works, is an server side application where "Users" make a "Posts", this interation is delivery by GraphQL as a app need in your requests.
