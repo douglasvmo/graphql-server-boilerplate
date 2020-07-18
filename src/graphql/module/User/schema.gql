@@ -4,6 +4,7 @@ type User {
   lastName: String!
   email: String
   active: Boolean!
+  fullName: String!
 }
 
 input UserInput {
@@ -14,8 +15,9 @@ input UserInput {
 }
 
 type Query {
-  users: [User!]!
+  users: [User]!
   user(id: ID!): User!
+  test: Boolean!
 }
 
 type Mutation {

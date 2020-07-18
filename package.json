@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && copyfiles **/*.gql dist/",
     "start": "node dist"
   },
@@ -15,8 +14,7 @@
     "class-validator": "^0.12.2",
     "graphql": "^15.3.0",
     "graphql-tools": "^6.0.13",
-    "mongoose": "^5.9.23",
-    "type-graphql": "^1.0.0-rc.3"
+    "mongoose": "^5.9.23"
   },
   "devDependencies": {
     "@types/mongoose": "^5.7.31",

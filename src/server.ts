@@ -8,9 +8,10 @@ interface config {
 }
 
 export function startServer({ typeDefs, resolvers }: config) {
-  mongoose.connect(config.DB_URL, {
+  mongoose.connect(config.MONGO_DB_URL, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
+    useFindAndModify: false
   });
 
   const server = new ApolloServer({ typeDefs, resolvers });
